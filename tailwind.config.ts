@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          100: "var(--primary-color-500)",
+        },
+      },
+
+      spacing: {
+        _14: "14px",
+        _30: "30px",
       },
     },
   },
