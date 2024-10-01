@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-body {
+  --primary-color-500: rgba(255, 149, 0, 1);
 }
