@@ -7,4 +7,9 @@
   --primary-color-500: rgba(255, 149, 0, 1);
 
   --gray-color-100: rgba(241, 241, 243, 1);
+  --gray-color-200: rgba(247, 247, 248, 1);
+}
+
+body {
+  background-color: var(--gray-color-200);
 }
