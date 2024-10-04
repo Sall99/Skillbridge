@@ -110,7 +110,10 @@ const MobileMenu = ({ isMenuOpen, toggleMenu }: MenuMobileProps) => (
           <NavLinksMobile />
           <AuthLinks />
         </div>
-        <motion.div className="absolute top-0 z-50" whileTap={{ scale: 0.9 }}>
+        <motion.div
+          className="absolute left-5 top-5 z-50"
+          whileTap={{ scale: 0.9 }}
+        >
           <X size={24} onClick={toggleMenu} />
         </motion.div>
       </motion.div>
