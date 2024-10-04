@@ -23,15 +23,15 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const variantClasses = {
-    primary: "bg-primary-500 text-white",
-    secondary: "bg-gray-200 text-black",
+    primary: "bg-primary-500 text-white hover:bg-primary-400",
+    secondary: "bg-white text-black font-medium hover:bg-gray-200",
   };
 
   return (
     <button
       onClick={onClick}
       className={clsx(
-        "rounded-md font-medium transition-all duration-500 ease-in-out hover:bg-primary-400",
+        "rounded-md font-medium transition-all duration-500 ease-in-out",
         sizeClasses[size],
         variantClasses[variant],
         className,
