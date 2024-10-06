@@ -127,7 +127,7 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="px-4 lg:px-_30">
+    <header className="max-w-_1920 m-auto px-4 lg:px-_30">
       <div className="flex justify-between py-5 transition-all duration-500 ease-in-out xl:px-_132">
         <div className="flex items-center gap-_50">
           <Logo />
