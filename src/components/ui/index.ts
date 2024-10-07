@@ -3,3 +3,4 @@ export * from "./button";
 export * from "./hero-section";
 export * from "./companies";
 export * from "./video";
+export * from "./benefits";

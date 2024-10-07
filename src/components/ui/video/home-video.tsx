@@ -8,7 +8,7 @@ export const HomeVideo = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="m-auto max-w-_1596 px-4 lg:px-20 2xl:px-0">
+    <section className="m-auto mb-_100 max-w-_1596 px-4 lg:px-20 2xl:px-0">
       <div
         className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl bg-contain bg-center bg-no-repeat 2xl:bg-contain"
         style={{
