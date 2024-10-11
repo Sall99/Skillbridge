@@ -1,4 +1,10 @@
-import { Benefits, Companies, HeroSection, HomeVideo } from "@/components";
+import {
+  Benefits,
+  Companies,
+  HeroSection,
+  HomeVideo,
+  Testimonials,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +13,7 @@ export default function Home() {
       <Companies />
       <HomeVideo />
       <Benefits />
+      <Testimonials />
     </div>
   );
 }
