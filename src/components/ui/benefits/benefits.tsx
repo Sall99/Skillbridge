@@ -14,28 +14,36 @@ interface CarProps {
 }
 
 const containerVariants = {
-  hidden: {},
+  hidden: { opacity: 0 },
   visible: {
+    opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      type: "spring",
+      stiffness: 100,
+      damping: 12,
     },
   },
 };
 
 const Card = ({ id, title, description }: CarProps) => {
   return (
-    <div className="h-_314 w-_358 bg-white p-_30 lg:h-_370 lg:w-_413 lg:p-10 2xl:h-_437 2xl:w-_519">
+    <motion.div
+      className="h-_314 w-_358 bg-white p-_30 lg:h-_370 lg:w-_413 lg:p-10 2xl:h-_437 2xl:w-_519"
+      variants={itemVariants}
+      whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
+    >
       <Typography variant="h2" className="mb-_30 text-right lg:mb-10">
         0{id}
       </Typography>
@@ -47,21 +55,20 @@ const Card = ({ id, title, description }: CarProps) => {
       </Typography>
 
       <div className="flex justify-end">
-        <motion.div whileHover={{ scale: [null, 1.1, 1.1] }}>
-          {" "}
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <Button variant="secondary" className="!bg-gray-200">
             <MoveUpRight color="#FF9500" />
           </Button>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 export const Benefits = () => {
   const controls = useAnimation();
   const ref = React.useRef(null);
-  const inView = useInView(ref, { once: true });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   useEffect(() => {
     if (inView) {
@@ -70,11 +77,17 @@ export const Benefits = () => {
   }, [controls, inView]);
 
   return (
-    <section
+    <motion.section
       ref={ref}
       className="m-auto mb-_100 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
     >
-      <div className="flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300">
+      <motion.div
+        className="flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300"
+        variants={itemVariants}
+      >
         <div className="max-w-_1117">
           <Typography variant="h2" className="mb-4">
             Benefits
@@ -91,20 +104,18 @@ export const Benefits = () => {
             View all
           </Button>
         </div>
-      </div>
+      </motion.div>
 
       <motion.ul
         variants={containerVariants}
-        initial="hidden"
-        animate={controls}
         className="mt-20 grid grid-cols-1 items-center justify-items-center gap-5 lg:grid-cols-2 xl:grid-cols-3"
       >
         {BenefitsData.map(({ id, title, description }) => (
-          <motion.li key={id} variants={itemVariants}>
+          <motion.li key={id}>
             <Card id={id} title={title} description={description} />
           </motion.li>
         ))}
       </motion.ul>
-    </section>
+    </motion.section>
   );
 };

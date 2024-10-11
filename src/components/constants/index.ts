@@ -82,3 +82,34 @@ export const BenefitsData = [
       "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.",
   },
 ];
+
+export const testimonialData = [
+  {
+    name: "Sarah L",
+    imageSrc:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728412137/flex-living/Image_h9h352.png",
+    testimonial:
+      "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
+  },
+  {
+    name: "Emily R",
+    imageSrc:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728412497/flex-living/Image_1_svpcd0.png",
+    testimonial:
+      "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!",
+  },
+  {
+    name: "Jason M",
+    imageSrc:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728412567/flex-living/Image_2_sfbjvh.png",
+    testimonial:
+      "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
+  },
+  {
+    name: "Michael K",
+    imageSrc:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728412566/flex-living/Image_3_bjk5b2.png",
+    testimonial:
+      "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!",
+  },
+];
