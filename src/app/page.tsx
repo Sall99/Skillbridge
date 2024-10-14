@@ -1,6 +1,7 @@
 import {
   Benefits,
   Companies,
+  Courses,
   HeroSection,
   HomeVideo,
   Testimonials,
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeVideo />
       <Benefits />
       <Testimonials />
+      <Courses />
     </div>
   );
 }
