@@ -113,3 +113,66 @@ export const testimonialData = [
       "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!",
   },
 ];
+
+export const coursesData = [
+  {
+    title: "Web Design Fundamentals",
+    duration: "4 Weeks",
+    level: "Beginner",
+    instructor: "John Smith",
+    description:
+      "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669787/skillbridge/Image_9_t8gaxo.png",
+  },
+  {
+    title: "UI/UX Design",
+    duration: "6 Weeks",
+    level: "Intermediate",
+    instructor: "Emily Johnson",
+    description:
+      "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669748/skillbridge/Image_8_kteofh.png",
+  },
+  {
+    title: "Mobile App Development",
+    duration: "8 Weeks",
+    level: "Intermediate",
+    instructor: "David Brown",
+    description:
+      "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669711/skillbridge/Image_7_fmvhsf.png",
+  },
+  {
+    title: "Graphic Design for Beginners",
+    duration: "10 Weeks",
+    level: "Beginner",
+    instructor: "Sarah Thompson",
+    description:
+      "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669673/skillbridge/Image_6_zw6kri.png",
+  },
+  {
+    title: "Front-End Web Development",
+    duration: "10 Weeks",
+    level: "Intermediate",
+    instructor: "Michael Adams",
+    description:
+      "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669617/skillbridge/Image_5_v8tal2.png",
+  },
+  {
+    title: "Advanced JavaScript",
+    duration: "6 Weeks",
+    level: "Advance",
+    instructor: "Jennifer Wilson",
+    description:
+      "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.",
+    imageUrl:
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669617/skillbridge/Image_4_rsrnth.png",
+  },
+];
