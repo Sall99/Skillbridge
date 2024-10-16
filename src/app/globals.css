@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --primary-color-100: rgba(255, 249, 240, 1);
+  --primary-color-200: rgba(255, 234, 204, 1);
   --primary-color-400: rgba(255, 149, 0, 0.724);
   --primary-color-500: rgba(255, 149, 0, 1);
 

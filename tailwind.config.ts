@@ -22,6 +22,8 @@ const config: Config = {
 
       colors: {
         primary: {
+          100: "var(--primary-color-100)",
+          200: "var(--primary-color-200)",
           400: "var(--primary-color-400)",
           500: "var(--primary-color-500)",
         },
@@ -53,6 +55,7 @@ const config: Config = {
         _140: "140px",
         _168: "168px",
         _172: "172px",
+        _181: "181px",
         _200: "200px",
         _250: "250px",
         _266: "266px",

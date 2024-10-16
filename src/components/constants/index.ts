@@ -176,3 +176,40 @@ export const coursesData = [
       "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1728669617/skillbridge/Image_4_rsrnth.png",
   },
 ];
+
+export const pricingData = [
+  {
+    planName: "Free Plan",
+    price: "$0",
+    features: [
+      "Access to selected free courses.",
+      "Limited course materials and resources.",
+      "Basic community support.",
+      "No certification upon completion.",
+      "Ad-supported platform.",
+    ],
+    exclusiveFeatures: [
+      {
+        feature: "Access to exclusive Pro Plan community forums.",
+        available: false,
+      },
+      {
+        feature: "Early access to new courses and updates.",
+        available: false,
+      },
+    ],
+  },
+  {
+    planName: "Pro Plan",
+    price: "$79",
+    features: [
+      "Unlimited access to all courses.",
+      "Unlimited course materials and resources.",
+      "Priority support from instructors.",
+      "Course completion certificates.",
+      "Ad-free experience.",
+      "Access to exclusive Pro Plan community forums.",
+      "Early access to new courses and updates.",
+    ],
+  },
+];
