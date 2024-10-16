@@ -79,7 +79,7 @@ export const Testimonials = () => {
   return (
     <motion.section
       ref={ref}
-      className="m-auto mb-_100 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      className="m-auto mb-_168 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
       initial="hidden"
       animate={controls}
       variants={containerVariants}

@@ -6,3 +6,4 @@ export * from "./video";
 export * from "./benefits";
 export * from "./testimonials";
 export * from "./courses";
+export * from "./pricing";
