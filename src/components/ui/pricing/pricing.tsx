@@ -70,7 +70,7 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
 
 export const Pricing = () => {
   return (
-    <section className="m-auto max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596">
+    <section className="m-auto mb-40 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596">
       {" "}
       <div className="mb-_62 flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300">
         <div className="max-w-_1117">

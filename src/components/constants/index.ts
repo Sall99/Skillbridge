@@ -213,3 +213,32 @@ export const pricingData = [
     ],
   },
 ];
+
+export const faqData = [
+  {
+    question: "Can I enroll in multiple courses at once?",
+    answer:
+      "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+  },
+  {
+    question: "What kind of support can I expect from instructors?",
+    answer:
+      "The level of support varies depending on the course. Instructors may offer guidance through discussion forums, emails, or scheduled office hours.",
+  },
+  {
+    question:
+      "Are the courses self-paced or do they have specific start and end dates?",
+    answer:
+      "Courses are typically self-paced, but some may have specific start and end dates, depending on the structure. Be sure to check the course details.",
+  },
+  {
+    question: "Are there any prerequisites for the courses?",
+    answer:
+      "Certain courses may have prerequisites, but many are designed for learners of all levels. Check the course details for any specific requirements.",
+  },
+  {
+    question: "Can I download the course materials for offline access?",
+    answer:
+      "Yes, most courses allow you to download materials for offline access, including readings and videos.",
+  },
+];
