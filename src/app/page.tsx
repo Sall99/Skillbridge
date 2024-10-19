@@ -2,6 +2,7 @@ import {
   Benefits,
   Companies,
   Courses,
+  Faq,
   HeroSection,
   HomeVideo,
   Pricing,
@@ -18,6 +19,7 @@ export default function Home() {
       <Courses />
       <Testimonials />
       <Pricing />
+      <Faq />
     </div>
   );
 }
