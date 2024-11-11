@@ -2,11 +2,11 @@
 
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-
-import { Typography } from "@/components/typography";
-import { Button } from "../button";
-import { coursesData } from "@/components/constants";
 import Image from "next/image";
+
+import { Typography, SectionHeader } from "@/components";
+import { Button } from "../button";
+import { coursesData } from "@/constants";
 
 interface CardProps {
   title: string;
@@ -68,14 +68,14 @@ const Card = ({
             {level}
           </div>
         </div>
-        <Typography>{instructor}</Typography>
+        <Typography variant="p">{instructor}</Typography>
       </div>
 
       <div className="mt-6 2xl:mt-_30">
         <Typography variant="h3" className="mb-5">
           {title}
         </Typography>
-        <Typography>{description}</Typography>
+        <Typography variant="p">{description}</Typography>
       </div>
 
       <div className="mt-6 2xl:mt-_30">
@@ -107,23 +107,13 @@ export const Courses = () => {
       animate={controls}
       variants={containerVariants}
     >
-      <motion.div
-        className="mb-_62 flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300"
-        variants={itemVariants}
-      >
-        <div className="max-w-_1117">
-          <Typography variant="h2">Our Courses</Typography>
-          <Typography className="text-gray-500">
-            Explore a variety of courses designed to enhance your skills and
-            knowledge. Whether you are a beginner or looking to advance, we
-            offer programs tailored to your needs.
-          </Typography>
-        </div>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Button variant="secondary" size="medium" className="w-_168">
-            View all
-          </Button>
-        </motion.div>
+      <motion.div variants={itemVariants}>
+        <SectionHeader
+          title={"Our Courses"}
+          description={
+            "Explore a variety of courses designed to enhance your skills and knowledge. Whether you are a beginner or looking to advance, we offer programs tailored to your needs."
+          }
+        />
       </motion.div>
 
       <motion.div variants={containerVariants}>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { CompaniesData } from "@/components";
+import { CompaniesData } from "@/constants";
 
 const containerVariants = {
   hidden: {},

@@ -7,9 +7,9 @@ import {
 } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-import { Typography } from "@/components/typography";
+import { Typography } from "@/components";
 import { Button } from "../button";
-import { faqData } from "@/components/constants";
+import { faqData } from "@/constants";
 
 export const Faq = () => {
   return (
@@ -21,7 +21,7 @@ export const Faq = () => {
               Frequently <br /> Asked Questions
             </Typography>
 
-            <Typography className="mt-3">
+            <Typography variant="p" className="mt-3">
               Still you have any questions? Contact our <br />
               Team via support@skillbridge.com
             </Typography>
@@ -30,6 +30,7 @@ export const Faq = () => {
               See All FAQ’s
             </Button>
           </div>
+
           <div>
             <Disclo />
           </div>

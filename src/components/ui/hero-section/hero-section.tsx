@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
 
   return (
     <motion.section
-      className="max-w-_941 m-auto mt-20 px-4 text-center 2xl:mt-_100"
+      className="m-auto mt-20 max-w-_941 px-4 text-center 2xl:mt-_100"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -40,11 +40,11 @@ export const HeroSection: React.FC = () => {
       <motion.div variants={itemVariants}>
         <Typography
           variant="h2"
-          className="relative mb-4 flex items-center justify-center"
+          className="relative mb-5 flex items-center justify-center font-semibold"
         >
-          <div className="left-_126 absolute -top-8 hidden lg:block 2xl:-top-10 2xl:left-2">
+          <div className="absolute -top-8 left-_30 hidden lg:block 2xl:-top-10 2xl:left-2">
             <motion.div
-              className="2xl:h-_62 2xl:w-_62 w-_39 relative mr-3 h-_44"
+              className="relative mr-3 h-_44 w-_39 2xl:h-_62 2xl:w-_62"
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
             >
@@ -52,7 +52,7 @@ export const HeroSection: React.FC = () => {
             </motion.div>
           </div>
           <motion.div
-            className="2xl:h-_62 2xl:w-_62 relative mr-3 h-_44 w-_44"
+            className="relative mr-3 h-_44 w-_44 2xl:h-_62 2xl:w-_62"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
@@ -64,13 +64,13 @@ export const HeroSection: React.FC = () => {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Typography variant="h3" className="mb-2">
+        <Typography variant="h2" headingSize="md" className="mb-2">
           with Online Design and Development Courses.
         </Typography>
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Typography variant="p">
+        <Typography variant="p" paragraphSize="sm">
           Learn from Industry Experts and Enhance Your Skills.
         </Typography>
       </motion.div>

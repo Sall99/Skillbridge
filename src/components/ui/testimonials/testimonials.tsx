@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Image from "next/image";
 
-import { testimonialData } from "@/components/constants";
-import { Typography } from "@/components/typography";
+import { testimonialData } from "@/constants";
 import { Button } from "../button";
+import { SectionHeader, Typography } from "@/components";
 
 interface CardProps {
   name: string;
@@ -44,7 +44,7 @@ const Card = ({ name, imageSrc, testimonial }: CardProps) => {
       variants={itemVariants}
       whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
     >
-      <Typography className="mb-5 text-gray-500 lg:mb-0">
+      <Typography variant="p" className="mb-5 text-gray-500 lg:mb-0">
         {testimonial}
       </Typography>
       <div className="flex items-center justify-between">
@@ -52,7 +52,7 @@ const Card = ({ name, imageSrc, testimonial }: CardProps) => {
           <div className="relative h-_50 w-_50 2xl:h-_62 2xl:w-_62">
             <Image src={imageSrc} alt={name} fill />
           </div>
-          <Typography>{name}</Typography>
+          <Typography variant="p">{name}</Typography>
         </div>
 
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -84,23 +84,13 @@ export const Testimonials = () => {
       animate={controls}
       variants={containerVariants}
     >
-      <motion.div
-        className="mb-_62 flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300"
-        variants={itemVariants}
-      >
-        <div className="max-w-_1117">
-          <Typography variant="h2">Our Testimonials</Typography>
-          <Typography className="text-gray-500">
-            We take pride in the feedback from our students. Their success
-            stories highlight the quality of our courses and the impact on their
-            careers.
-          </Typography>
-        </div>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Button variant="secondary" size="medium" className="w-_168">
-            View all
-          </Button>
-        </motion.div>
+      <motion.div variants={itemVariants}>
+        <SectionHeader
+          title={"Our Testimonials"}
+          description={
+            "We take pride in the feedback from our students. Their success stories highlight the quality of our courses and the impact on their careers."
+          }
+        />
       </motion.div>
       <motion.div variants={containerVariants}>
         <motion.ul className="grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2">
