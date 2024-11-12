@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Typography, SectionHeader } from "@/components";
+import { Typography, SectionHeader, Button } from "@/components";
 import { Check, X } from "lucide-react";
 import { pricingData } from "@/constants";
 
@@ -18,7 +18,7 @@ interface CardProps {
 const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
   return (
     <motion.div
-      className="rounded-md border border-gray-100 bg-gray-50 px-5 py-_30 md:px-_30 md:py-_50"
+      className="rounded-md border border-gray-100 bg-gray-50 px-5 py-_30 md:py-_50 2xl:px-_30"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -72,7 +72,11 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
                 <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-200">
                   <Check width={14} height={12} />
                 </div>
-                <Typography variant="p" className="w-_181 sm:w-full">
+                <Typography
+                  variant="p"
+                  paragraphSize="xs"
+                  className="w-_181 sm:w-full"
+                >
                   {content}
                 </Typography>
               </motion.li>
@@ -91,7 +95,11 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
                 <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-200">
                   <X width={14} height={12} />
                 </div>
-                <Typography variant="p" className="w-_181 sm:w-full">
+                <Typography
+                  variant="p"
+                  paragraphSize="xs"
+                  className="w-_181 sm:w-full"
+                >
                   {feature}
                 </Typography>
               </motion.li>
@@ -100,14 +108,14 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
         </motion.div>
       </motion.div>
 
-      <motion.button
+      <motion.div
         className="mt-5 w-full"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.8 }}
       >
-        Get Started
-      </motion.button>
+        <Button className="w-full">Get Started</Button>
+      </motion.div>
     </motion.div>
   );
 };
@@ -128,7 +136,7 @@ export const Pricing = () => {
         <SectionHeader
           title={"Our Pricing"}
           description={
-            " Discover a range of courses crafted to elevate your skills and expertise. Whether you re just starting out or aiming to advance, we provide programs customized to meet your learning goals."
+            "Discover a range of courses crafted to elevate your skills and expertise. Whether you re just starting out or aiming to advance, we provide programs customized to meet your learning goals."
           }
         />
       </motion.div>

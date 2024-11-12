@@ -5,7 +5,7 @@ import {
   // Faq,
   HeroSection,
   HomeVideo,
-  // Pricing,
+  Pricing,
   Testimonials,
 } from "@/components";
 
@@ -18,8 +18,8 @@ export default function Home() {
       <Benefits />
       <Courses />
       <Testimonials />
-      {/*  <Pricing />
-      <Faq /> */}
+      <Pricing />
+      {/*<Faq /> */}
     </div>
   );
 }
