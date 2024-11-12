@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
 
   return (
     <motion.section
-      className="m-auto mt-20 max-w-_941 px-4 text-center 2xl:mt-_100"
+      className="m-auto mt-_50 max-w-_941 px-4 text-center xl:mt-20 2xl:mt-_100"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -76,7 +76,7 @@ export const HeroSection: React.FC = () => {
       </motion.div>
 
       <motion.div
-        className="mt-_62 flex justify-center gap-3"
+        className="mt-_50 flex justify-center gap-3 2xl:mt-_62"
         variants={itemVariants}
       >
         <Button variant="primary">Explore Courses</Button>

@@ -40,11 +40,15 @@ const itemVariants = {
 const Card = ({ id, title, description }: CarProps) => {
   return (
     <motion.div
-      className="h-_314 w-_358 bg-white p-_30 lg:h-_370 lg:w-_413 lg:p-10 2xl:h-_437 2xl:w-_519"
+      className="h-_314 bg-white p-_30 md:w-_358 lg:h-_370 lg:w-_413 lg:p-10 2xl:h-_437 2xl:w-_519"
       variants={itemVariants}
       whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
     >
-      <Typography variant="h2" className="mb-_30 text-right lg:mb-10">
+      <Typography
+        variant="h2"
+        headingSize="md"
+        className="mb-_30 text-right font-bold lg:mb-10"
+      >
         0{id}
       </Typography>
       <Typography className="mb-3 !text-lg" variant="h3">
@@ -79,7 +83,7 @@ export const Benefits = () => {
   return (
     <motion.section
       ref={ref}
-      className="m-auto mb-_100 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      className="m-auto mb-_50 mt-_50 max-w-_1279 px-4 lg:mb-_100 lg:mt-_100 xl:px-0 2xl:max-w-_1596"
       initial="hidden"
       animate={controls}
       variants={containerVariants}
@@ -95,7 +99,7 @@ export const Benefits = () => {
 
       <motion.ul
         variants={containerVariants}
-        className="grid grid-cols-1 items-center justify-items-center gap-5 lg:grid-cols-2 xl:grid-cols-3"
+        className="grid grid-cols-1 items-center justify-items-center gap-5 md:grid-cols-2 xl:grid-cols-3"
       >
         {BenefitsData.map(({ id, title, description }) => (
           <motion.li key={id}>

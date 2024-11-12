@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={BeVietnamPro.className}>
         <TopBanner />
         <Header />
-        <main className="max-w-_1920 m-auto">{children}</main>
+        <main className="m-auto max-w-_1920">{children}</main>
       </body>
     </html>
   );

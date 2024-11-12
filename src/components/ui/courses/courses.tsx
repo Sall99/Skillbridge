@@ -53,29 +53,37 @@ const Card = ({
     <motion.div
       variants={itemVariants}
       whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-      className="h-_613 bg-white p-6 sm:p-10 md:w-_629 xl:w-full 2xl:h-_803 2xl:p-_50"
+      className="h-_554 w-full bg-white p-6 sm:h-_613 xl:w-_629 xl:p-10 2xl:h-_803 2xl:w-_783 2xl:p-_50"
     >
-      <div className="relative m-auto h-_172 w-full sm:w-_549 xl:h-_266 2xl:h-_380 2xl:w-_683">
+      <div className="relative m-auto h-_172 w-full xl:h-_266 2xl:h-_380 2xl:w-_683">
         <Image src={imageUrl} alt={title} fill />
       </div>
 
-      <div className="mt-6 flex items-center justify-between gap-_30 2xl:mt-_30">
+      <div className="mt-6 flex flex-col justify-between gap-_14 sm:flex-row sm:items-center sm:gap-_30 2xl:mt-_30">
         <div className="flex gap-_30">
-          <div className="flex h-_44 items-center justify-center rounded-lg border border-gray-100 px-4 text-gray-500">
+          <div className="flex h-8 items-center justify-center rounded-lg border border-gray-100 px-4 text-sm text-gray-500 sm:h-_44 2xl:text-lg">
             {duration}
           </div>
-          <div className="flex h-_44 items-center justify-center rounded-lg border border-gray-100 px-4 text-gray-500">
+          <div className="flex h-8 items-center justify-center rounded-lg border border-gray-100 px-4 text-sm text-gray-500 sm:h-_44 2xl:text-lg">
             {level}
           </div>
         </div>
-        <Typography variant="p">{instructor}</Typography>
+        <Typography variant="p" paragraphSize="sm">
+          {instructor}
+        </Typography>
       </div>
 
       <div className="mt-6 2xl:mt-_30">
-        <Typography variant="h3" className="mb-5">
+        <Typography
+          variant="h3"
+          headingSize="sm"
+          className="mb-5 font-semibold"
+        >
           {title}
         </Typography>
-        <Typography variant="p">{description}</Typography>
+        <Typography variant="p" paragraphSize="sm">
+          {description}
+        </Typography>
       </div>
 
       <div className="mt-6 2xl:mt-_30">
@@ -101,7 +109,7 @@ export const Courses = () => {
 
   return (
     <motion.section
-      className="m-auto mb-_100 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      className="m-auto mb-_50 max-w-_1279 px-4 lg:mb-_100 xl:px-0 2xl:max-w-_1596"
       ref={ref}
       initial="hidden"
       animate={controls}
@@ -117,7 +125,7 @@ export const Courses = () => {
       </motion.div>
 
       <motion.div variants={containerVariants}>
-        <motion.ul className="grid grid-cols-1 justify-items-center gap-5 xl:grid-cols-2">
+        <motion.ul className="grid justify-items-center gap-5 md:grid-cols-2">
           {coursesData.map(
             (
               { duration, imageUrl, level, instructor, title, description },

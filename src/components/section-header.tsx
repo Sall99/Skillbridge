@@ -9,9 +9,13 @@ interface Props {
 
 export function SectionHeader({ title, description }: Props) {
   return (
-    <div className="flex flex-col items-center justify-between gap-5 lg:flex-row lg:gap-_300">
+    <div className="mb-10 flex flex-col justify-between gap-5 lg:mb-_62 lg:flex-row lg:gap-_300 xl:items-center 2xl:mb-20">
       <div className="max-w-_1117">
-        <Typography variant="h2" className="mb-4">
+        <Typography
+          variant="h2"
+          headingSize="md"
+          className="mb-4 font-semibold"
+        >
           {title}
         </Typography>
         <Typography variant="p" className="text-gray-500">
