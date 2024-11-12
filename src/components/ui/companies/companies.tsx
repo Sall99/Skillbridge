@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { CompaniesData } from "@/components";
+import { CompaniesData } from "@/constants";
 
 const containerVariants = {
   hidden: {},
@@ -44,7 +44,7 @@ export const Companies = () => {
   }, []);
 
   return (
-    <section className="mb-20 mt-_100 px-4">
+    <section className="mt-5 px-4 xl:mt-_100">
       <div className="m-auto bg-white py-6 xl:max-w-_1279">
         <motion.ul
           className="flex items-center justify-center"

@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import clsx from "clsx";
-
-import { HEADER_LINKS } from "@/components/constants";
-import { Button } from "@/components/ui";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
+import clsx from "clsx";
+
+import { HEADER_LINKS } from "@/constants";
+import { Button } from "@/components";
 
 interface MenuBurgerProps {
   toggleMenu: () => void;
@@ -85,7 +85,7 @@ const NavLinksMobile = () => {
 
 const AuthLinks = () => {
   return (
-    <div className="flex items-center justify-center gap-_30">
+    <div className={"flex items-center justify-center gap-_30 md:flex-row"}>
       <Link href="/sign-up" className="text-sm 2xl:text-lg">
         Sign up
       </Link>
@@ -108,7 +108,6 @@ const MobileMenu = ({ isMenuOpen, toggleMenu }: MenuMobileProps) => (
       >
         <div className="flex h-full flex-col items-center justify-center gap-8">
           <NavLinksMobile />
-          <AuthLinks />
         </div>
         <motion.div
           className="absolute left-5 top-5 z-50"
@@ -127,7 +126,7 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="max-w-_1920 m-auto px-4 lg:px-_30">
+    <header className="m-auto max-w-_1920 px-4 lg:px-_30">
       <div className="flex justify-between py-5 transition-all duration-500 ease-in-out xl:px-_132">
         <div className="flex items-center gap-_50">
           <Logo />

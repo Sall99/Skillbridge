@@ -71,7 +71,7 @@ export const BenefitsData = [
   },
   {
     id: 5,
-    title: "Practical Projects and Assignments",
+    title: "Practical Projects & Assignments",
     description:
       "Develop a portfolio showcasing your skills and abilities to potential employers.",
   },

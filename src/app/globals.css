@@ -12,8 +12,10 @@
   --gray-color-200: rgba(247, 247, 248, 1);
   --gray-color-500: rgba(89, 89, 90, 1);
   --color-gray-600: rgba(76, 76, 77, 1);
+  --gray-color-800: rgba(38, 38, 38, 1);
 }
 
 body {
   background-color: var(--gray-color-200);
+  color: #262626;
 }

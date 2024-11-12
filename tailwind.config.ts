@@ -32,6 +32,7 @@ const config: Config = {
           200: "var(--gray-color-200)",
           500: "var(--gray-color-500)",
           600: "var(--gray-color-600)",
+          700: "var(--gray-color-700)",
         },
       },
 
@@ -70,6 +71,7 @@ const config: Config = {
         _408: "408px",
         _413: "413px",
         _437: "437px",
+        _554: "554px",
         _519: "519px",
         _549: "549px",
         _613: "613px",
