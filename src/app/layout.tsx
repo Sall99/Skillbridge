@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 
 import "./globals.css";
-import { Header, TopBanner } from "@/components";
+import { Footer, Header, TopBanner } from "@/components";
 
 const BeVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin-ext"],
@@ -25,6 +25,7 @@ export default function RootLayout({
         <TopBanner />
         <Header />
         <main className="m-auto max-w-_1920">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -123,7 +123,7 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
 export const Pricing = () => {
   return (
     <motion.section
-      className="m-auto mb-40 max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      className="m-auto max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

@@ -12,7 +12,7 @@ export const VARIANTS = {
 } as const;
 
 type VariantType = keyof typeof VARIANTS;
-type HeadingVariant = "lg" | "md" | "sm";
+type HeadingVariant = "lg" | "md" | "sm" | "xs";
 type ParagraphVariant = "md" | "sm" | "xs";
 type ColorVariant = "default" | "muted" | "primary" | "error";
 
@@ -35,6 +35,7 @@ const STYLES = {
     lg: "text-base lg:text-5xl 2xl:text-5xl",
     md: "text-2xl md:text-3xl 2xl:text-4xl leading-snug",
     sm: "text-xl 2xl:text-2xl leading-relaxed",
+    xs: "text-sm lg:text-lg leading-relaxed",
   },
   paragraph: {
     md: "text-base md:text-lg 2xl:text-xl leading-relaxed text-gray-600",
