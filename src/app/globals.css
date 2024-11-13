@@ -21,6 +21,12 @@ body {
   color: #262626;
 }
 
+.layout {
+  max-width: 1596px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .base-layout {
   margin-top: 50px;
   max-width: 1920px;
@@ -34,6 +40,10 @@ body {
   .base-layout {
     margin-top: 100px;
   }
+  .layout {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -41,10 +51,18 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+  .layout {
+    margin-left: 162px;
+    margin-right: 162px;
+  }
 }
 
 @media (min-width: 1600px) {
   .base-layout {
     margin-top: 150px;
+  }
+  .layout {
+    margin-left: 162px;
+    margin-right: 162px;
   }
 }

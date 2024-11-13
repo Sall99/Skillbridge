@@ -32,14 +32,14 @@ interface TypographyProps<V extends VariantType>
 
 const STYLES = {
   heading: {
-    lg: "text-base lg:text-5xl 2xl:text-5xl",
-    md: "text-2xl md:text-3xl 2xl:text-4xl leading-snug",
-    sm: "text-xl 2xl:text-2xl leading-relaxed",
-    xs: "text-sm lg:text-lg leading-relaxed",
+    lg: "text-2xl lg:text-3xl 2xl:text-4xl font-semibold",
+    md: "text-2xl md:text-3xl 2xl:text-4xl",
+    sm: "text-xl 2xl:text-2xl",
+    xs: "text-sm lg:text-lg",
   },
   paragraph: {
-    md: "text-base md:text-lg 2xl:text-xl leading-relaxed text-gray-600",
-    sm: "text-sm md:text-base 2xl:text-lg leading-normal text-gray-600",
+    md: "text-base md:text-lg 2xl:text-xl text-gray-600",
+    sm: "text-sm md:text-base 2xl:text-lg text-gray-600",
     xs: "text-sm 2xl:text-lg",
   },
   color: {
