@@ -6,6 +6,25 @@ export const HEADER_LINKS = [
   { path: "/contact", title: "Contact" },
 ];
 
+export const HomeLinks = [
+  { path: "/benefits", title: "Benefits" },
+  { path: "/our-courses", title: "Our Courses" },
+  { path: "/our-testimonials", title: "Our Testimonials" },
+  { path: "/faq", title: "Our FAQ" },
+];
+
+export const AboutLinks = [
+  { path: "/company", title: "Company" },
+  { path: "/achievements", title: "Achievements" },
+  { path: "/our-goals", title: "Our Goals" },
+];
+
+export const SocialsLinks = [
+  { href: "", title: "Facebook", icon: "/img/fb.png" },
+  { href: "", title: "Twitter", icon: "/img/x.png" },
+  { href: "", title: "Linkedin", icon: "/img/in.png" },
+];
+
 export const CompaniesData = [
   {
     name: "zapier",

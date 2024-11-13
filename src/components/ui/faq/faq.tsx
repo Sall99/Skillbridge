@@ -15,7 +15,7 @@ import { faqData } from "@/constants";
 export const Faq = () => {
   return (
     <motion.section
-      className="m-auto max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
+      className="2xl:mt-_150 m-auto mt-_50 max-w-_1279 px-4 lg:mt-_100 xl:px-0 2xl:max-w-_1596"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ export const Faq = () => {
               Frequently <br /> Asked Questions
             </Typography>
 
-            <Typography variant="p" className="mt-3">
+            <Typography variant="p" paragraphSize="sm" className="mt-3">
               Still you have any questions? Contact our <br />
               Team via support@skillbridge.com
             </Typography>
@@ -113,7 +113,7 @@ export default function Disclo() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1 + key * 0.1 }}
+                transition={{ duration: 0.5 }}
               >
                 {answer}
               </motion.p>
