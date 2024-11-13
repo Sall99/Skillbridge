@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <Companies />
       <HomeVideo />
@@ -20,6 +20,6 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Faq />
-    </div>
+    </>
   );
 }
