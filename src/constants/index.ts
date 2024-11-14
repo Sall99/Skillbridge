@@ -261,3 +261,106 @@ export const faqData = [
       "Yes, most courses allow you to download materials for offline access, including readings and videos.",
   },
 ];
+
+export const courses = [
+  {
+    title: "Web Design Fundamentals",
+    description:
+      "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+    duration: "4 Weeks",
+    level: "Beginner",
+    instructor: "John Smith",
+    images: [
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519102/skillbridge/Image_48_yw6dse.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519072/skillbridge/Image_45_tlyz9w.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519072/skillbridge/Image_47_pftwvn.png",
+    ],
+    curriculum: [
+      "Introduction to HTML",
+      "Styling with CSS",
+      "Introduction to Responsive Design",
+      "Design Principles for Web",
+      "Building a Basic Website",
+    ],
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
+    duration: "6 Weeks",
+    level: "Intermediate",
+    instructor: "Emily Johnson",
+    images: [
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519538/skillbridge/Image_52_getmdt.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519538/skillbridge/Image_55_gdf5yd.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519538/skillbridge/Image_54_n5pttr.png",
+    ],
+    curriculum: [
+      "Introduction to UI/UX Design",
+      "User Research and Personas",
+      "Wireframing and Prototyping",
+      "Visual Design and Branding",
+      "Usability Testing and Iteration",
+    ],
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
+    duration: "8 Weeks",
+    level: "Intermediate",
+    instructor: "David Brown",
+    images: [
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519278/skillbridge/Image_49_u54h9r.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519278/skillbridge/Image_50_vespij.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519277/skillbridge/Image_51_gmxqpq.png",
+    ],
+    curriculum: [
+      "Introduction to Mobile App Development",
+      "Fundamentals of Swift Programming (iOS)",
+      "Fundamentals of Kotlin Programming (Android)",
+      "Building User Interfaces",
+      "App Deployment and Testing",
+    ],
+  },
+  {
+    title: "Graphic Design for Beginners",
+    description:
+      "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
+    duration: "10 Weeks",
+    level: "Beginner",
+    instructor: "Sarah Thompson",
+    images: [
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519649/skillbridge/Image_58_plbukx.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519648/skillbridge/Image_56_s1aefl.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519648/skillbridge/Image_57_fc0fvv.png",
+    ],
+    curriculum: [
+      "Introduction to Graphic Design",
+      "Typography and Color Theory",
+      "Layout Design and Composition",
+      "Image Editing and Manipulation",
+      "Designing for Print and Digital Media",
+    ],
+  },
+  {
+    title: "Front-End Web Development",
+    description:
+      "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
+    duration: "10 Weeks",
+    level: "Intermediate",
+    instructor: "Michael Adams",
+    images: [
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519760/skillbridge/Image_59_jml2fb.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519761/skillbridge/Image_60_ghzenl.png",
+      "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1731519761/skillbridge/Image_61_q8igdw.png",
+    ],
+    curriculum: [
+      "HTML Fundamentals",
+      "CSS Styling and Layouts",
+      "JavaScript Basics",
+      "Building Responsive Websites",
+      "Introduction to Bootstrap and React",
+    ],
+  },
+];
