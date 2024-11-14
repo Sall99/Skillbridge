@@ -1,32 +1,50 @@
 import React from "react";
+
 import Typography from "./typography";
 import { Button } from "./ui";
+import clsx from "clsx";
 
 interface Props {
   title: string;
   description: string;
+  btnText?: string;
+  variant?: "lg" | "md";
 }
 
-export function SectionHeader({ title, description }: Props) {
+export function SectionHeader({
+  title,
+  description,
+  btnText = "View all",
+  variant = "lg",
+}: Props) {
   return (
-    <div className="mb-10 flex flex-col justify-between gap-5 lg:mb-_62 lg:flex-row lg:gap-_300 xl:items-center 2xl:mb-20">
-      <div className="max-w-_1117">
+    <div
+      className={clsx(
+        "flex flex-col justify-between gap-5 lg:flex-row lg:gap-_50 xl:items-center",
+        variant === "lg" && "mb-10 lg:mb-_62 2xl:mb-20",
+        variant === "md" && "mb-_10 lg:mb-6 2xl:mb-_30",
+      )}
+    >
+      <div>
         <Typography
           variant="h2"
-          headingSize="md"
+          headingSize={variant === "lg" ? "md" : "sm"}
           className="mb-4 font-semibold"
         >
           {title}
         </Typography>
-        <Typography variant="p" className="text-gray-500">
+        <Typography
+          variant="p"
+          paragraphSize={variant === "lg" ? "md" : "sm"}
+          className="text-gray-500"
+        >
           {description}
         </Typography>
       </div>
-      <div>
-        <Button variant="secondary" size="medium" className="w-_168">
-          View all
-        </Button>
-      </div>
+
+      <Button variant="secondary" size="medium" className="w-_168">
+        {btnText}
+      </Button>
     </div>
   );
 }

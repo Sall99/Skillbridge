@@ -37,7 +37,7 @@ export function Overview({ title, description }: Props) {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="layout mt-_50 flex flex-col gap-4 md:flex-row lg:mt-20 lg:gap-20 2xl:mt-_100 2xl:gap-_100"
+      className="layout mb-_50 mt-_50 flex flex-col gap-4 md:flex-row lg:mb-20 lg:mt-20 lg:gap-20 2xl:mb-_100 2xl:mt-_100 2xl:gap-_100"
     >
       <motion.div variants={itemVariants} className="flex-1">
         <Typography variant="h2" headingSize="lg">
