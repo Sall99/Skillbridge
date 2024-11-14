@@ -42,7 +42,11 @@ export function SectionHeader({
         </Typography>
       </div>
 
-      <Button variant="secondary" size="medium" className="w-_168">
+      <Button
+        variant="secondary"
+        size="medium"
+        className={clsx(variant === "md" ? "w-_168 xl:w-60" : "w-_168")}
+      >
         {btnText}
       </Button>
     </div>
