@@ -11,3 +11,4 @@ export * from "./faq";
 export * from "./overview";
 export * from "./all-courses";
 export * from "./achievements";
+export * from "./goals";
