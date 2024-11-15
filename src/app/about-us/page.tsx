@@ -1,4 +1,4 @@
-import { Achievements, Goals, Overview } from "@/components";
+import { Achievements, Cta, Goals, Overview } from "@/components";
 import React from "react";
 
 export default function AboutUs() {
@@ -12,6 +12,7 @@ export default function AboutUs() {
       />
       <Achievements />
       <Goals />
+      <Cta />
     </>
   );
 }
