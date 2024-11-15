@@ -364,3 +364,38 @@ export const courses = [
     ],
   },
 ];
+
+export const features = [
+  {
+    icon: "crown",
+    w: 34,
+    h: 34,
+    title: "Trusted by Thousands",
+    description:
+      "We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+  },
+  {
+    icon: "medal",
+    w: 34,
+    h: 34,
+    title: "Award-Winning Courses",
+    description:
+      "Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+  },
+  {
+    icon: "smile",
+    w: 34,
+    h: 23,
+    title: "Positive Student Feedback",
+    description:
+      "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+  },
+  {
+    icon: "bolt",
+    w: 34,
+    h: 34,
+    title: "Industry Partnerships",
+    description:
+      "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies.",
+  },
+];
