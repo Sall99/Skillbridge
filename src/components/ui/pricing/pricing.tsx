@@ -5,6 +5,9 @@ import { Typography, SectionHeader, Button } from "@/components";
 import { Check, X } from "lucide-react";
 import { pricingData } from "@/constants";
 
+interface PricingCoProps {
+  head?: boolean;
+}
 interface CardProps {
   planName: string;
   price: string;
@@ -120,7 +123,7 @@ const Card = ({ planName, price, feature, exclusiveFeatures }: CardProps) => {
   );
 };
 
-export const Pricing = () => {
+export const PricingCo = ({ head }: PricingCoProps) => {
   return (
     <motion.section
       className="m-auto max-w-_1279 px-4 xl:px-0 2xl:max-w-_1596"
@@ -128,18 +131,22 @@ export const Pricing = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <SectionHeader
-          title={"Our Pricing"}
-          description={
-            "Discover a range of courses crafted to elevate your skills and expertise. Whether you re just starting out or aiming to advance, we provide programs customized to meet your learning goals."
-          }
-        />
-      </motion.div>
+      {head ? (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <SectionHeader
+            title={"Our Pricing"}
+            description={
+              "Discover a range of courses crafted to elevate your skills and expertise. Whether you re just starting out or aiming to advance, we provide programs customized to meet your learning goals."
+            }
+          />
+        </motion.div>
+      ) : (
+        ""
+      )}
       <motion.ul
         className="grid grid-cols-1 gap-5 rounded-md bg-white p-5 lg:grid-cols-2 lg:p-20"
         initial={{ opacity: 0 }}

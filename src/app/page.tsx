@@ -5,7 +5,7 @@ import {
   Faq,
   HeroSection,
   HomeVideo,
-  Pricing,
+  PricingCo,
   Testimonials,
 } from "@/components";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Benefits />
       <Courses />
       <Testimonials />
-      <Pricing />
+      <PricingCo />
       <Faq />
     </>
   );
