@@ -13,3 +13,5 @@ export * from "./all-courses";
 export * from "./achievements";
 export * from "./goals";
 export * from "./cta";
+export * from "./contact";
+export * from "./social-links";

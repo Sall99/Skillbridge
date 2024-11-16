@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary";
   className?: string;
   onClick?: () => void;
+  type?: "submit" | "reset" | "button";
 };
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   className,
   onClick,
+  type = "button",
 }) => {
   const sizeClasses = {
     small: "px-3 py-1 text-sm",
@@ -29,6 +31,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
+      type={type}
       onClick={onClick}
       className={clsx(
         "rounded-md font-medium transition-all duration-500 ease-in-out",
