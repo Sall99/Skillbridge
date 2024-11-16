@@ -36,6 +36,16 @@ body {
   margin-right: auto;
 }
 
+.contact-form .input:nth-last-child(-n + 2) {
+  grid-column: span 2 / span 2;
+}
+
+@media (min-width: 767px) {
+  .contact-form .input:nth-last-child(-n + 2) {
+    grid-column: span 2 / span 2;
+  }
+}
+
 @media (min-width: 1024px) {
   .base-layout {
     margin-top: 100px;

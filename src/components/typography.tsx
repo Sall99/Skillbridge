@@ -35,7 +35,7 @@ const STYLES = {
     lg: "text-2xl lg:text-3xl 2xl:text-4xl font-semibold",
     md: "text-2xl md:text-3xl 2xl:text-4xl font-semibold",
     sm: "text-xl 2xl:text-2xl",
-    xs: "text-sm lg:text-lg",
+    xs: "text-sm lg:text-base 2xl:text-lg",
   },
   paragraph: {
     md: "text-base md:text-lg 2xl:text-xl text-gray-600",
