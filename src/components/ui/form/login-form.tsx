@@ -25,7 +25,7 @@ const formFields: Array<{
     name: "password",
     label: "Password",
     placeholder: "Enter your password",
-    type: "email",
+    type: "password",
     multiline: false,
   },
 ];

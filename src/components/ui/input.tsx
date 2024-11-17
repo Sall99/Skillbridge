@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
 
 interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
@@ -20,6 +22,8 @@ const Input: React.FC<InputProps> = ({
   className = "",
   ...props
 }) => {
+  const [showPassword, setShowPassword] = useState(false);
+
   const baseInputStyles = `
     w-full px-5 py-5 rounded-lg border-2 bg-gray-200
     focus:outline-none focus:ring-2 focus:ring-primary-400
@@ -34,6 +38,14 @@ const Input: React.FC<InputProps> = ({
 
   const InputElement = multiline ? "textarea" : "input";
 
+  // Determine the actual input type for password fields
+  const inputType =
+    type === "password" ? (showPassword ? "text" : "password") : type;
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="w-full">
       {label && (
@@ -44,11 +56,27 @@ const Input: React.FC<InputProps> = ({
       <div className="relative">
         <InputElement
           {...props}
-          type={multiline ? undefined : type}
+          type={multiline ? undefined : inputType}
           rows={multiline ? rows : undefined}
-          className={`${baseInputStyles} ${inputStateStyles} ${className}`}
+          className={`${baseInputStyles} ${inputStateStyles} ${className} ${
+            type === "password" ? "pr-12" : ""
+          }`}
           aria-invalid={error ? "true" : "false"}
         />
+        {type === "password" && (
+          <button
+            type="button"
+            onClick={togglePasswordVisibility}
+            className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-700"
+            aria-label={showPassword ? "Hide password" : "Show password"}
+          >
+            {showPassword ? (
+              <EyeOff className="h-5 w-5" />
+            ) : (
+              <Eye className="h-5 w-5" />
+            )}
+          </button>
+        )}
       </div>
       {(error || helperText) && (
         <p
