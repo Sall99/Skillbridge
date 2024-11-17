@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Image from "next/image";
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -8,6 +9,8 @@ type ButtonProps = {
   className?: string;
   onClick?: () => void;
   type?: "submit" | "reset" | "button";
+  iconSrc?: string;
+  icon?: boolean;
 };
 
 export const Button: React.FC<ButtonProps> = ({
@@ -17,6 +20,8 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   onClick,
   type = "button",
+  icon = false,
+  iconSrc,
 }) => {
   const sizeClasses = {
     small: "px-3 py-1 text-sm",
@@ -34,13 +39,18 @@ export const Button: React.FC<ButtonProps> = ({
       type={type}
       onClick={onClick}
       className={clsx(
-        "rounded-md font-medium transition-all duration-500 ease-in-out",
+        "flex items-center justify-center gap-8 rounded-md font-medium transition-all duration-500 ease-in-out",
         sizeClasses[size],
         variantClasses[variant],
         className,
       )}
     >
-      {children}
+      {icon && (
+        <div className="relative h-6 w-6">
+          <Image src={iconSrc || ""} alt="" fill />
+        </div>
+      )}
+      <p>{children}</p>
     </button>
   );
 };

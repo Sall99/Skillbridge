@@ -37,7 +37,7 @@ const itemVariants = {
   },
 };
 
-const Card = ({ name, imageSrc, testimonial }: CardProps) => {
+export const Card = ({ name, imageSrc, testimonial }: CardProps) => {
   return (
     <motion.div
       className="flex min-h-_250 max-w-_629 flex-col justify-between bg-white p-_30 lg:p-10 2xl:h-_304 2xl:max-w-_783 2xl:p-_50"

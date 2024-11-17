@@ -8,7 +8,7 @@ import { AboutLinks, HomeLinks, SocialsLinks } from "@/constants";
 
 export function Footer() {
   return (
-    <section className="base-layout 2xl:px-_162 bg-white px-5 pb-6 pt-_50 xl:px-20 xl:pt-_62 2xl:pt-_100">
+    <footer className="base-layout bg-white px-5 pb-6 pt-_50 xl:px-20 xl:pt-_62 2xl:px-_162 2xl:pt-_100">
       <div>
         <div className="flex flex-col justify-between md:flex-row">
           <div>
@@ -100,6 +100,6 @@ export function Footer() {
           </Typography>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

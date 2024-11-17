@@ -2,7 +2,7 @@ import React from "react";
 
 interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
-  type: "text" | "email" | "tel" | "number";
+  type: "text" | "email" | "password" | "tel" | "number";
   label?: string;
   error?: string;
   helperText?: string;

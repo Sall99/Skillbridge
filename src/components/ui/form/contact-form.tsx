@@ -57,7 +57,7 @@ const formFields: Array<{
 
 export function ContactForm() {
   return (
-    <form className="contact-form md:p-_60 w-full p-4 2xl:p-20">
+    <form className="contact-form w-full p-4 md:p-_60 2xl:p-20">
       <div className="flex flex-col gap-_30 md:grid md:grid-cols-2">
         {formFields.map(
           ({ name, label, placeholder, type, multiline }, key) => (
