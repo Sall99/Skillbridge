@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+
 import {
   Disclosure,
   DisclosureButton,
@@ -14,30 +14,10 @@ import { faqData } from "@/constants";
 
 export const Faq = () => {
   return (
-    <motion.section
-      className="2xl:mt-_150 m-auto mt-_50 max-w-_1279 px-4 lg:mt-_100 xl:px-0 2xl:max-w-_1596"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <motion.div
-        className="rounded-md bg-white p-6 sm:p-10 lg:p-20 2xl:p-_100"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <motion.div
-          className="flex flex-col justify-between gap-10 sm:flex-row lg:gap-20 2xl:gap-_120"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <motion.div
-            className="md:w-_408"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
+    <section className="m-auto mt-_50 max-w-_1279 px-4 lg:mt-_100 xl:px-0 2xl:mt-_150 2xl:max-w-_1596">
+      <div className="rounded-md bg-white p-6 sm:p-10 lg:p-20 2xl:p-_100">
+        <div className="flex flex-col justify-between gap-10 sm:flex-row lg:gap-20 2xl:gap-_120">
+          <div className="md:w-_408">
             <Typography variant="h2">
               Frequently <br /> Asked Questions
             </Typography>
@@ -47,43 +27,22 @@ export const Faq = () => {
               Team via support@skillbridge.com
             </Typography>
 
-            <motion.button
-              className="mt-10 2xl:mt-_50"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              See All FAQs
-            </motion.button>
-          </motion.div>
+            <button className="mt-10 2xl:mt-_50">See All FAQs</button>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
+          <div>
             <Disclo />
-          </motion.div>
-        </motion.div>
-      </motion.div>
-    </motion.section>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
 export default function Disclo() {
   return (
-    <motion.div
-      className="xl:w-_631 2xl:w-_767"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.6 }}
-    >
-      <motion.div
-        className="mx-auto w-full divide-y divide-white/5 rounded-xl bg-white/5"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
-      >
+    <div className="xl:w-_631 2xl:w-_767">
+      <div className="mx-auto w-full divide-y divide-white/5 rounded-xl bg-white/5">
         {faqData.map(({ question, answer }, key) => (
           <Disclosure
             key={key}
@@ -92,35 +51,19 @@ export default function Disclo() {
             defaultOpen={key === 0 ? true : false}
           >
             <DisclosureButton className="group flex w-full justify-between">
-              <motion.span
-                className="text-base font-medium 2xl:text-lg"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 + key * 0.1 }}
-              >
+              <span className="text-base font-medium 2xl:text-lg">
                 {question}
-              </motion.span>
-              <motion.div
-                className="size-5 group-data-[open]:rotate-180"
-                initial={{ opacity: 0, rotate: -180 }}
-                whileInView={{ opacity: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 + key * 0.1 }}
-              >
+              </span>
+              <div className="size-5 group-data-[open]:rotate-180">
                 <ChevronDownIcon />
-              </motion.div>
+              </div>
             </DisclosureButton>
             <DisclosurePanel className="mt-_50 text-gray-500 2xl:text-base">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                {answer}
-              </motion.p>
+              <p>{answer}</p>
             </DisclosurePanel>
           </Disclosure>
         ))}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

@@ -42,7 +42,7 @@ export const HeroSection: React.FC = () => {
           variant="h2"
           className="relative mb-5 flex items-center justify-center font-semibold"
         >
-          <div className="absolute -top-8 left-_30 hidden lg:block 2xl:-top-10 2xl:left-2">
+          <div className="absolute -top-8 left-[167px] hidden lg:block 2xl:-top-10 2xl:left-20">
             <motion.div
               className="relative mr-3 h-_44 w-_39 2xl:h-_62 2xl:w-_62"
               whileHover={{ rotate: 360 }}
