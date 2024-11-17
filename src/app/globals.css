@@ -40,6 +40,52 @@ body {
   grid-column: span 2 / span 2;
 }
 
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: #e4e4e7;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+.carroussel-container .slick-prev,
+.carroussel-container .slick-next {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--gray-color-700);
+  background-color: white !important;
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid var(--gray-color-100);
+  top: 114%;
+}
+.carroussel-container .slick-prev {
+  left: 366px;
+}
+.carroussel-container .slick-next {
+  right: -7px;
+}
+
+.carroussel-container .slick-prev:before,
+.carroussel-container .slick-next:before {
+  color: black;
+}
+
+.carroussel-container .slick-prev,
+.carroussel-container .slick-next {
+  color: black;
+}
+
 @media (min-width: 767px) {
   .contact-form .input:nth-last-child(-n + 2) {
     grid-column: span 2 / span 2;
@@ -64,6 +110,9 @@ body {
   .layout {
     margin-left: 80px;
     margin-right: 80px;
+  }
+  .carroussel-container .slick-prev {
+    left: 500px;
   }
 }
 
