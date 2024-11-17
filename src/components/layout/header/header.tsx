@@ -126,8 +126,8 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="m-auto max-w-_1920 px-4 lg:px-_30">
-      <div className="flex justify-between py-5 transition-all duration-500 ease-in-out xl:px-_132">
+    <header className="m-auto max-w-_1920">
+      <div className="layout flex justify-between py-5 transition-all duration-500 ease-in-out">
         <div className="flex items-center gap-_50">
           <Logo />
           <NavLinks />
